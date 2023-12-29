@@ -3,6 +3,11 @@
     "homepage": "https://YoniTint.github.io/robofriends",
     "version": "0.1.0",
     "private": true,
+    "jest": {
+        "snapshotSerializers": [
+            "enzyme-to-json/serializer"
+        ]
+    },
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
@@ -55,5 +60,11 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "@cfaester/enzyme-adapter-react-18": "^0.7.1",
+        "enzyme": "^3.11.0",
+        "enzyme-to-json": "^3.6.2",
+        "redux-mock-store": "^1.5.4"
     }
 }
